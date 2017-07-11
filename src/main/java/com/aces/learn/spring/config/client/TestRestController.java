@@ -18,6 +18,7 @@ public class TestRestController {
 	
 	@RequestMapping("/property")
 	public String getTestProperty(){
-		return microServiceConfig.getTestProperty();
+		String value = microServiceConfig.getTestProperty(); 
+		return "<H1>"+value+"</H1>";
 	}
 }
